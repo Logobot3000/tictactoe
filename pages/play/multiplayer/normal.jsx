@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import io from 'socket.io-client';
 
-const socket = io('http://18.218.62.85:3001');
+const socket = io('https://18.218.62.85:3001');
 
 export default function Normal() {
     const [squares, setSquares] = useState(Array(9).fill(null));
