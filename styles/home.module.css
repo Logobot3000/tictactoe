@@ -1,0 +1,25 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.titleContainer {
+    height: 18vh;
+    width: 100vw;
+    font-size: 5vmin;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.mainContainer {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pBottom {
+    padding-bottom: 2vh;
+}

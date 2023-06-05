@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-image: url('../public/galaxy.jpeg');
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.link {
+    color: white;
+    text-decoration-color: #561a8b;
+}
+
+input {
+    margin: 2vmin;
+}
+
+.choiceButton {
+    margin: 2vmin;
+    margin-left: 2vmin;
+    padding: 1vmin;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 2vmin;
+    font-family: Arial, Helvetica, sans-serif;
+}
