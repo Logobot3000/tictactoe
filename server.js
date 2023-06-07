@@ -5,7 +5,7 @@ const server = http.createServer();
 
 const io = new Server(server, {
     cors: {
-        origin: 'http://tictactoe-mu-wine.vercel.app/',
+        origin: 'http://18.218.62.85:3000',
         methods: ['GET', 'POST'],
     },
 });
