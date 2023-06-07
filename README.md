@@ -22,7 +22,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## PLAYING ONLINE
 
-Log on to [http://18.218.62.85:3000/](http://18.218.62.85:3000/) in order to play!
+Log on to [http://3.12.161.38:3000/](http://3.12.161.38:3000/) in order to play!
 
 ## Learn More
 
