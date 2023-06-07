@@ -17,8 +17,9 @@ export default function Play({ room }) {
             {roomId ? (
                 <div>
                     <h2>Room ID: {roomId}</h2>
-                    <p>Share this room ID with your opponent to join the game.</p>
-                    <Link className='choiceButton' href={`/play/multiplayer/normal?room=${roomId}`}>
+                    <h4>Share this room ID with your opponent to join the game.</h4>
+                    <br /><br />
+                    <Link className='joinButton' href={`/play/multiplayer/normal?room=${roomId}`}>
                         Join Room
                     </Link>
                 </div>
