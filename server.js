@@ -5,7 +5,7 @@ const server = http.createServer();
 
 const io = new Server(server, {
     cors: {
-        origin: 'http://3.12.161.38:3000',
+        origin: 'https://rocky-spire-59611.herokuapp.com/',
         methods: ['GET', 'POST'],
     },
 });

@@ -1,6 +1,9 @@
 {
   "name": "next-tic-tac-toe",
   "version": "0.1.0",
+  "engines": {
+    "node": "19.x || 18.x || 16.x"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
