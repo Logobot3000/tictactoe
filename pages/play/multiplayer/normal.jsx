@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import io from 'socket.io-client';
 
-const socket = io('https://rocky-spire-59611.herokuapp.com:3001');
+let socket;
 
 export default function Normal() {
     const [squares, setSquares] = useState(Array(9).fill(null));
@@ -13,6 +13,18 @@ export default function Normal() {
     const [gameOver, setGameOver] = useState(false);
 
     useEffect(() => {
+        socketInitializer();
+
+        return () => {
+            socket.disconnect();
+        };
+    }, []);
+
+    async function socketInitializer() {
+        await fetch("/api/socket");
+
+        socket = io();
+
         const urlParams = new URLSearchParams(window.location.search);
         const roomParam = urlParams.get('room');
         setRoom(roomParam);
@@ -28,14 +40,10 @@ export default function Normal() {
             setXTurn(data.xTurn);
             setGameOver(!!getWinner(data.squares));
         });
-
-        return () => {
-            socket.off('playerSymbol');
-            socket.off('gameState');
-        };
-    }, []);
+    }
 
     const winner = getWinner(squares);
+
     let nextToPlay;
     let status;
     if (winner) {
