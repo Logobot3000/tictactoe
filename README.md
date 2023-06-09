@@ -6,7 +6,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+To start, run the development server:
 
 ```bash
 npm run dev
@@ -18,11 +18,9 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-**Note: Multiplayer will not work if you choose to run it locally.**
-
 ## PLAYING ONLINE
 
-Log on to [http://3.12.161.38:3000/](http://3.12.161.38:3000/) in order to play!
+Log on to [https://rocky-spire-59611.herokuapp.com](https://rocky-spire-59611.herokuapp.com) in order to play!
 
 ## Learn More
 
