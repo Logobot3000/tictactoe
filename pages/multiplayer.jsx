@@ -22,7 +22,6 @@ export default function Play({ room }) {
                     <Link className='joinButton' href={`/play/multiplayer/normal?room=${roomId}`}>
                         Join Room (Normal)
                     </Link>
-                    <br /><br />
                     <Link className='joinButton' href={`/play/multiplayer/elite?room=${roomId}`}>
                         Join Room (Elite)
                     </Link>
