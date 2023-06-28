@@ -20,7 +20,11 @@ export default function Play({ room }) {
                     <h4>Share this room ID with your opponent to join the game.</h4>
                     <br /><br />
                     <Link className='joinButton' href={`/play/multiplayer/normal?room=${roomId}`}>
-                        Join Room
+                        Join Room (Normal)
+                    </Link>
+                    <br /><br />
+                    <Link className='joinButton' href={`/play/multiplayer/elite?room=${roomId}`}>
+                        Join Room (Elite)
                     </Link>
                 </div>
             ) : (
@@ -28,8 +32,11 @@ export default function Play({ room }) {
                     <h2>Create a New Room</h2>
                     <button onClick={createRoom} className='choiceButton'>Create Room</button>
                     <h2>Or Join an Already Existing Room</h2>
+                    <label className={styles.whiteText}>Room code goes here:</label>
                     <input onChange={event => setJoinRoomId(event.target.value)} type='text' value={joinRoomId} accept='string'/>
-                    <Link className='choiceButton' href={`/play/multiplayer/normal?room=${joinRoomId}`}>Join Room</Link>
+                    <br /><br />
+                    <Link className='choiceButton' href={`/play/multiplayer/normal?room=${joinRoomId}`}>Join Room (Normal)</Link>
+                    <Link className='choiceButton' href={`/play/multiplayer/elite?room=${joinRoomId}`}>Join Room (Elite)</Link>
                 </div>
             )}
         </div>

@@ -134,3 +134,7 @@
     font-size: 2vmin;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.whiteText {
+    color: white;
+}
