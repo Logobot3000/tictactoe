@@ -92,7 +92,9 @@ export default function Elite() {
             <div className={styles.container}>
                 {
                     status ? '' : <div>
-                        <h3 className={styles.nextToPlay}>{ nextToPlay }, <Link href='/' className='link'>Home</Link></h3>
+                        <h3 className={styles.nextToPlay}>
+                            {nextToPlay}, Room: {room}, <Link href="/">Home</Link>
+                        </h3>
                         <Board squares={ squares } onSquareClick={ handleClick }/>
                     </div>
                 }
@@ -103,8 +105,8 @@ export default function Elite() {
                     <div className={styles.winnerContainerFlex}>
                         <div className={styles.winner}>
                             <h1>{status}</h1>
-                            <h5>{winner === 'Tie' ? '0.5 - 0.5' : winner[0] === 'X' ? '1 - 0' : '0 - 1'}</h5>
-                            <h3 className={styles.padding}>{winner === 'Tie' ? '' : `4 in a row: ${winner[1][0]}, ${winner[1][1]}, ${winner[1][2]}, ${winner[1][3]}`}</h3>
+                            <h5>{winner === 'Tie' ? '0.5 - 0.5' : winner && winner[0] === 'X' ? '1 - 0' : winner ? '0 - 1' : ''}</h5>
+                            <h3 className={styles.padding}>{winner === 'Tie' ? '' : winner && winner[1] ? `4 in a row: ${winner[1][0]}, ${winner[1][1]}, ${winner[1][2]}, ${winner[1][3]}` : ''}</h3>
                             {gameOver && ( // Conditionally render "Play Again" button
                                 <button className={styles.winnerButton} onClick={playAgain}>
                                     Play Again
