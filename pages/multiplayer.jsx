@@ -25,6 +25,9 @@ export default function Play({ room }) {
                     <Link className='joinButton' href={`/play/multiplayer/elite?room=${roomId}`}>
                         Join Room (Elite)
                     </Link>
+                    <Link className='joinButton' href={`/play/multiplayer/ultimate?room=${roomId}`}>
+                        Join Room (Ultimate)
+                    </Link>
                 </div>
             ) : (
                 <div>
@@ -36,6 +39,7 @@ export default function Play({ room }) {
                     <br /><br />
                     <Link className='choiceButton' href={`/play/multiplayer/normal?room=${joinRoomId}`}>Join Room (Normal)</Link>
                     <Link className='choiceButton' href={`/play/multiplayer/elite?room=${joinRoomId}`}>Join Room (Elite)</Link>
+                    <Link className='choiceButton' href={`/play/multiplayer/ultimate?room=${joinRoomId}`}>Join Room (Ultimate)</Link>
                 </div>
             )}
         </div>

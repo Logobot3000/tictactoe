@@ -9,7 +9,7 @@ export default function Home() {
         </div>
         <div className={styles.mainContainer}>
             <Link href={'/multiplayer'}><h1>Play</h1></Link>
-            <h5 className={styles.pBottom}>Play Normal or Elite with others!</h5>
+            <h5 className={styles.pBottom}>Play all tic-tac-toe versions with others!</h5>
             <Link href={'/play/ai'}><h1>Play vs. AI</h1></Link>
             <h5 className={styles.pBottom}>Play Normal with 3 difficulties of AI!</h5>
             <br /><br />
